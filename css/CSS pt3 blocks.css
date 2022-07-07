@@ -1,0 +1,170 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+h2{
+    text-align-last: center;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 500;
+    color: rgba(114, 6, 6, 0.796);
+}
+.example-block{
+    padding: 16px 15px 30px 17px;
+    border: 3px solid black;
+}
+/* внутренний отступ блочных тегов padding:_"верхний"_"правый"_"снизу"_"левый"; 
+отступ от границы БЛОКА до содержимого
+padding:_"верхний"_"левый и правый"_"снизу"; - если 3 значения
+padding:_"верхний и нижний"_"левый и правый"; - если 2 значения
+padding:_"верх, них, лево, право"; - если 1 значение
+если указать значение в % то % выситывается от всей ширины родительского тега - в данном случае вся ширина браузерного окна и при съужении
+отступы будут тоже уменьшаться.
+Не работает со строчными тегами.
+Нельзя использовать отрицательные значения.
+Запись в VScode: p10 */
+
+.example-block2{
+    margin: 10px;
+    border: 3px solid black;
+}
+/* внешний отступ блочных тегов. Запиывается так же как и padding. Можно использовать отрицательные значения, в таком случае блок растянется
+шире чем родительский тег, т.е. появится горизонтальный ползунок.
+Запись в VScode: m10 */
+
+.example-block3{
+    width: 600px;
+    border: 3px solid black;
+}
+.example-image{
+    width: 100px;
+    border: 3px solid black;
+}
+/* Жестко задает параметр ширины для блочных тегов. При изменении окна браузера блочный тег не будет подстравиваться под изменения.
+Может применяться к некоторым строчным тегам. Пример тег img - задаст ширину картинки.
+Запись в VScode: w600 */
+
+.example-block4{
+    max-width: 500px;
+    border: 3px solid black;
+}
+/* Устанавливает максимальную ширину блочных тегов, а так же некоторых строчных (нпр: img). Отличия от width в том, что при изменение
+родительского тега его размер будет меняться тоже.
+Запись в VScode: mw500 */
+
+.example-block5{
+    min-width: 700px;
+    border: 3px solid black;
+}
+/* Устанавливает минимальную ширину блочных тегов и некоторых строчных. При уменьшении родительского тега будет уменьшаться до значения 700
+а затем перестанет это делать и появится ползунок прокрутки.
+Запись в VScode: minw700 */
+
+.example-block6{
+    height: 75%;
+    border: 3px solid black;
+}
+/* Задает высоту блочных и некоторых строчных тегов. Если указано в % то займет % от родителя.
+Запись в VScode: h200 */
+
+.example-block7{
+    max-height: 200px;
+    border: 3px solid black;
+}
+/* Задает максимальную высоту блочных тегов и некоторых строчных. Зависит от количества наполения. Если количесто текста будет больше чем влезет
+в 200px, то будет залазить на другие теги
+Запись в VScode: mh200 */
+
+.example-block8{
+    min-height: 200px;
+    border: 3px solid black;
+}
+/* Задает минимальную высоту блочных тего и некоторых строчных. Ограничение стоит только на минимальную высоту
+Запись в VScode: minh200 */
+
+.example-block9{
+    overflow: auto;
+    border: 3px solid black;
+    max-height: 50px;
+}
+/* overflov с параметром visible - будет принудительно показывать контент и залазить на другие теги если не входит в блок.
+ hidden - будет скрывать то, что выходит за границы блока.
+ scroll - создаст вертикальный и горизонтальный ползунок прокрутки даже если он не нужен.
+ auto - подключает ползунок прокрутки если он нужен.
+ Запись в VScode: ovh/v/a/s */
+
+ .example-string1{
+    display: block;
+    padding: 20px;
+    margin: 10px 10px 15px 10px;
+    border: 3px solid black;
+ }
+ /* display: block - заставляет строчные работать как блочные, т.е все свойства для блочных начинают работать для строчных тегов 
+ Запись в VScode: db */
+
+ .example-block11{
+    display: inline;
+ }
+ /* inline - заставляет блочные работать как строчные. Перестают работать свойства для блочных тегов, контент выстраивается в занимаемую длину
+  Запись в VScode: di */
+
+  .example-string2{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    width: 500px;
+  }
+  /* Элемент остаётся строчным, занимает ширину равную контента, выстраивается в строку, но на него начинают действовать параметры блочных тегов
+  margin, padding, border и т.д.
+  Запись в VScode: dib */
+
+  .example-string3{
+    display: none;
+  }
+  /* none - убирает тег со страницы. Перестаёт участвовать в вёрстке.
+  Запись в VScode: dn */
+
+  nav .list{
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 7px 0px 0px 25px;
+    background: url(../img/icons/vpered.svg) no-repeat;
+    background-position: left top;
+    background-attachment: scroll;
+}
+   

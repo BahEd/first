@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>CSS pt.4. Block-2.</title>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/CSS pt4 blocks2.css">
+	</head>
+	<body>
+		<div class="block">
+            <h2>Свойство border.</h2>
+            <span class="redline">Border</span> - граница блочного тега и для некоторых строчных(img). толщина линии_стиль линии_цвет линии. solid-линия; dotted-точки; dashed-пунктир. Смещается внутрь на ширину значения, не изменяя общий размер блока. Можно задать границу только для одной стороны: border-bottom(left/right/top) или убрать одну из сторон границы в таком случае оставить общий border и добавить запись с нужной стороной: border-left: 0px (none) border-radius: 10px 10px 10px 10px; - радиус скругления углов (сверху справа снизу слева); 10px - для всех сторон. Работает и без border, с overflow: hidden;
+            <p>
+                <span class="vscode">Запись в VScode:</span> 
+                bd
+            </p>
+        </div>
+        
+        <div class="block2">
+            <h2>Свойство outline.</h2>
+            <span class="redline">outline</span> - запись как и border. Не изменяет внутреннее содержимое блока. Указывается только для всех сторон сразу. Со строчным тегом будет не прямоугольник, а огибать текст.
+        </div>
+
+        <div class="block3">
+            <h2>Свойство box-shadow.</h2>
+            <span class="redline">box-shadow</span> - сдвиг по гор._сдвиг по верт._радиус тени_расстояние тени_цвет тени; - тень блока. можно через запятую дописать внутреннюю тень "inset_гор_верт_радиус_расстояние_цвет". Можно использовать с border-radius.
+            <p>
+                <span class="vscode">Запись в VScode:</span> box-shadow: 6px 4px 3px 3px rgba(5, 167, 48, 0.753), inset 0px 0px 1px 1px;
+            </p>
+        </div>
+        </div>
+
+        <div class="block4">
+            <h2>Свойство opacity.</h2>
+            <span class="redline">opacity</span> - прозрачность блока. 0 - полностью прозрачный; 1 - полностью видный; 0.5 - 50%. Не убирает блок из верстки при значении "0" как display: none. Всё так же можно взаимодействовать (допустим там была ссылка, место где она была будет кликабельно).
+        </div>
+
+        <div class="block5">
+            <h2>Свойство visibility.</h2>
+            <span class="redline">visibility</span> - предназначен для отображения или скрытия элемента. Значение по умолчанию "visible" - виден. Значение "hiddden" - блок исчезнет, но место, которое он занимал останется и при этом нельзя взаимодейстовать как с opacity: 0;
+        </div>
+
+        <div class="image">
+            <img class="img" src="img/for blocks2.jpg" alt="хз где?!">
+        </div>
+            
+        <nav class="menu">
+             <ul>
+                <li class="list"><a href="index.html">Переход на первую страницу.</a></li>
+                <li class="list"><a href="forms.html">Переход на страницу с тегами формы.</a></li>
+                <li class="list"><a href="2nd layot.html">Практическое задание с тегами формы.</a></li>
+                <li class="list"><a href="CSS pt.1.html">CSS часть 1. Знакомство с CSS.</a></li>
+                <li class="list"><a href="CSS pt.2 font&text.html">CSS часть 2. Параметры текста и Шрифта.</a></li>
+                <li class="list"><a href="CSS pt.3 Block.html">CSS часть 3. Блоки.</a></li>
+                <li class="list"><a href="CSS pt.5 background.html">CSS часть 5. Background.</a></li>
+                <li class="list"><a href="CSS pt.6 pseudoclass.html">CSS часть 6. Псевдоклассы.</a></li>
+                <li class="list"><a href="CSS pt.7 pseudoelements.html">CSS часть 7. Псевдоэлементы.</a></li>
+            </ul>
+        </nav>
+	</body>
+</html>

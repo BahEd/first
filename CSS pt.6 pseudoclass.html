@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>CSS pt.6. Pseudoclass.</title>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/CSS pt6 pseudoclass.css">
+	</head>
+	<body>
+		<div class="header"><span class="h1">Псевдоклассы</span></div>
+
+		<div class="pseudoclasstext">
+			<a target="_blank" href="https://doka.guide/css/link/" class="link"><span class="firstletter">L</span>ink</a> - псевдокласс :link используется для оформления ссылок, которые пользователь ещё никогда не открывал (в рамках текущего домена). <p>Синтаксис: селектор:псевдокласс{свойства}.</p>
+		</div>
+		<div class="pseudoclasstext">
+			<a target="_blank" href="https://doka.guide/css/hover/" class="linkhover"><span class="firstletter">H</span>over</a> - псевдокласс :hover срабатывает при наведение на элемент.
+		</div>
+		<div class="pseudoclasstext">
+			<a target="_blank" href="https://doka.guide/css/visited/" class="linkvisited"><span class="firstletter">V</span>isited</a> - псевдокласс :visited добавляется ссылкам, по которым уже переходил пользователь. Если вы задаёте стили для разных состояний ссылок, то следует придерживаться определённого порядка в объявлении стилей: :link — :visited — :hover — :active. <span class="LVHA">LVHA!</span>
+		</div>
+		<div class="pseudoclasstext">
+			<a target="_blank" href="https://doka.guide/css/active/" class="linkactive"><span class="firstletter">A</span>ctive</a> - псевдокласс :active срабатывает в момент нажатия.
+		</div>
+		<div class="pseudoclasstext"><a target="_blank" href="https://doka.guide/css/focus/" class="linkfocus"><span class="firstletter">F</span>ocus</a> - псевдокласс :focus срабатывает когда наведен фокус на объект, чаще всего используется для тегов <<span>form></span>.
+			<input type="text" class="textinput">
+		</div>
+		<ul class="list">
+			<li>text - </li><a target="_blank" href="https://doka.guide/css/child/" class="linkchild"><span class="pseudoclasstext"><span class="firstletter">F</span>irst-child</span></a><span class="pseudoclasstext">- обращение к первому в списке элементу.</span>
+			<br>
+			<li>text</li>
+			<br>
+			<li>text</li>
+			<br>
+			<li>text</li>
+			<br>
+			<li>text - </li><a target="_blank" href="https://doka.guide/css/child/" class="linkchild"><span class="pseudoclasstext"><span class="firstletter">L</span>ast-child</span></a><span class="pseudoclasstext">- обращение к последнему в списке элементу.</span>
+		</ul>
+		<div class="pseudoclasstext"><a target="_blank" href="https://doka.guide/css/child/" class="linkchild"><span class="firstletter">C</span>hild</a> - псевдокласс :child При помощи этих псевдоклассов можно удобно выбирать элементы по их порядковому номеру внутри родительского элемента.
+			<p>:nth-child(){...} - в "()" указывается порядковый номер элемента, к которому можно обратиться.</p>
+			<p>:nth-child(odd){...} - обращение к нечетным элементам.</p>
+			<p>:nth-child(even){...} - обращение к четным элементам.</p>
+		</div>
+		<form action="#">
+			<button type="submit" class="textbutton">Отправить</button>
+		</form>
+		<nav class="menu">
+			<ul>
+				<li class="list"><a href="index.html">Переход на первую страницу.</a></li>
+				<li class="list"><a href="forms.html">Переход на страницу с тегами формы.</a></li>
+				<li class="list"><a href="2nd layot.html">Практическое задание с тегами формы.</a></li>
+				<li class="list"><a href="CSS pt.1.html">CSS часть 1. Знакомство с CSS.</a></li>
+				<li class="list"><a href="CSS pt.2 font&text.html">CSS часть 2. Параметры текста и Шрифта.</a></li>
+				<li class="list"><a href="CSS pt.3 Block.html">CSS часть 3. Блоки.</a></li>
+				<li class="list"><a href="CSS pt.4 Block2.html">CSS часть 4. Блоки-2.</a></li>
+				<li class="list"><a href="CSS pt.5 background.html">CSS часть 5. Background.</a></li>
+				<li class="list"><a href="CSS pt.7 pseudoelements.html">CSS часть 7. Псевдоэлементы.</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>

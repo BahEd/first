@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>CSS pt.7. Pseudoelemets.</title>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/CSS pt7 pseudoelemets.css">
+	</head>
+	<body>
+        <div class="header"><span class="h1">Псевдоэлементы</span></div>
+
+		<p class="pseudoelementstext"><span class="firstletter">С</span>интаксис: .селектор класса(типа):имя севдоэлемента{...}</p>
+        <div class="pseudoelementstext">
+			<a target="_blank" href="https://doka.guide/css/pseudoelements/#first-letter" class="link"><span class="firstletter">F</span>irst-letter</a> - :first-letter - при помощи этого псевдоэлемента можно выбрать первую букву в строке или абзаце текста. Это позволяет создать так называемую буквицу — большую декоративную букву в начале текста. 
+			<p class="example1">Пример.</p>
+		</div>
+
+		<div class="pseudoelementstext">
+			<a target="_blank" href="https://doka.guide/css/pseudoelements/#first-line" class="link"><span class="firstletter">F</span>irst-line</a> - <div class="example2">Этот псевдоэлемент выбирает первую строку текста. Cработает только для блочных элементов. Со строчными этот трюк не пройдёт. Например, можно сделать «красную строку», правда, не так, как учили в школе =)</div>
+		</div>
+
+		<div class="pseudoelementstext">
+			<a target="_blank" href="https://doka.guide/css/pseudoelements/#before-i-after" class="link"><span class="firstletter">B</span>efore & <span class="firstletter">A</span>fter</a> - Два самых часто встречающихся псевдоэлемента. Они очень похожи. Единственная разница заключается в том, что ::before по умолчанию располагается перед содержимым элемента, для которого задаётся, а ::after — после. Для обоих элементов обязательным является свойство content — содержимое псевдоэлемента. С его помощью можно, например, вставить какое-нибудь слово до или после текста. Без свойства content псевдоэлемент не отобразится.
+			<p>Пример:</p>
+			<br>
+			<div class="example3">
+				<ul class="list">
+					<li>text</li>
+					<li>text</li>
+					<li>text</li>
+					<li>text</li>
+					<li>text</li>
+				</ul>
+			</div>
+		</div>
+
+		<nav class="menu">
+			<ul>
+				<li class="list"><a href="index.html">Переход на первую страницу.</a></li>
+				<li class="list"><a href="forms.html">Переход на страницу с тегами формы.</a></li>
+				<li class="list"><a href="2nd layot.html">Практическое задание с тегами формы.</a></li>
+				<li class="list"><a href="CSS pt.1.html">CSS часть 1. Знакомство с CSS.</a></li>
+				<li class="list"><a href="CSS pt.2 font&text.html">CSS часть 2. Параметры текста и Шрифта.</a></li>
+				<li class="list"><a href="CSS pt.3 Block.html">CSS часть 3. Блоки.</a></li>
+				<li class="list"><a href="CSS pt.4 Block2.html">CSS часть 4. Блоки-2.</a></li>
+				<li class="list"><a href="CSS pt.5 background.html">CSS часть 5. Background.</a></li>
+				<li class="list"><a href="CSS pt.6 pseudoclass.html">CSS часть 6. Псевдоклассы.</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>
